@@ -1,0 +1,92 @@
+@mixin btn {
+  background: #111;
+  color: white;
+  padding: 5px 10px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: #111;
+    background-color: transparent;
+    border: 1px solid darkblue;
+    cursor: pointer;
+    box-shadow: rgba(131, 179, 20, 0.24) 0px 3px 8px;
+  }
+}
+
+.recipe-card {
+  color: rgb(247, 247, 247);
+  padding: 1rem;
+  border-radius: 1rem;
+  text-align: left;
+  margin-bottom: 2rem;
+  background-color: rgb(160, 193, 28);
+  width: fit-content;
+  overflow: hidden;
+  .recipe-img {
+    img {
+      border-radius: 1rem;
+      margin-bottom: 9px;
+    }
+  }
+  .recipe-title {
+    clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #060630;
+    font-family: revert;
+    text-transform: capitalize;
+    font-weight: bold;
+  }
+  .recipe-country {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #462828;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  .die-dish {
+    display: flex;
+    justify-content: start;
+    gap: 2rem;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 600;
+    margin-bottom: 5px;
+  }
+  .recipe-mealType {
+    font-size: 1.3rem;
+    margin-bottom: 9px;
+    color: #3e3b7c;
+    font-family: cursive;
+  }
+  .buttons {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    .more {
+      list-style: none;
+      text-decoration: none;
+      background: #222;
+      color: white;
+      font-size: 1.3rem;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+      &:hover {
+        color: #111;
+        background-color: transparent;
+        border: 1px solid darkblue;
+        cursor: pointer;
+        box-shadow: rgba(163, 193, 42, 0.24) 0px 3px 8px;
+      }
+    }
+    .button-more {
+      @include btn;
+    }
+  }
+}
