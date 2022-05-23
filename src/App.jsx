@@ -58,17 +58,9 @@ function App() {
       </div>
 
       <div className="app__bg__hheader">
-        <div
-          className="cont"
-          // sx={{
-          //   paddingTop: "1rem",
-          //   display: "flex",
-          //   justifyContent: "center",
-          //   alignItems: "center",
-          // }}
-        >
+        <div className="container">
           <div>
-            <div className="row">
+            <div className="row d-flex justify-content-center align-items-center">
               {recipes.map((recipe) => (
                 <div className="col-lg-4 col-md-6 col-sm-12">
                   <Recipe
